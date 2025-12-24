@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Admin Dashboard</h1>
+
+    <button onclick="logoutAdmin()">Logout</button>
+
+    <h2>All Students</h2>
+    <ul id="studentList"></ul>
+
+    <h3>Add New Student</h3>
+    <h3>Add / Update Student Grades</h3>
+
+<select id="studentSelect">
+  <option value="">Select Student</option>
+</select>
+
+<input type="text" id="subject" placeholder="Subject">
+<input type="text" id="grade" placeholder="Grade">
+<button onclick="addGrade()">Add Grade</button>
+    <input type="text" id="newUsername" placeholder="Username">
+    <input type="password" id="newPassword" placeholder="Password">
+    <button onclick="addStudent()">Add Student</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
